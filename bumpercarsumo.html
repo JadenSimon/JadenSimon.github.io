@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Bumper Car Sumo</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">My Projects</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="bumpercarsumo.html">Bumper Car Sumo</a></li>
+											<li><a href="spacewars.html">Space Wars</a></li>
+										    <li><a href="tankgame.html">FPGA Tank Game</a></li>
+										    <li><a href="tweetmining.html">Political Tweet Analysis</a></li>
+										    <li><a href="eccasic.html">Elliptical Curve ASIC</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Bumper Car Sumo</h2>
+							<p>Team Members: Dan Humeniuk, Melvin Bosnjak, Jaden Simon</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<h3>Project Summary</h3>
+								<p>Bumper Car Sumo is a 4-player robot battle game where the victor is the last one remaining in the arena. Players must stand on Wii balance boards to control their robots, giving them a unique and fun way to battle it out. To prevent players from cheating the system, a camera along with computer vision libraries detect the elimination of players and determine the winner.</p>
+
+								<p>Our robots are entirely our own design. This meant finding the necessary components that met our specifications as well as designing a printed circuit board (PCB) and 3D printed shell. An ESP-32 microcontroller was used as our core component given we need wireless functionality. Microcontroller code was written in C using the Arduino platform. </p>
+
+								<p>A Raspberry Pi is used as centralized server (known as "The Hub") that governs the robots and relays commands from the Wii balance boards to each robot. Server code was written in Python and OpenCV was used for computer vision functionality. All networking used UDP as the core protocol given its low latency.</p>
+
+								<hr />
+
+								<h4>Key Features</h4>
+								<ul>
+								<li>Custom robots and battle arena</li>
+								<li>Centralized control server</li>
+								<li>Robot detection using OpenCV</li>
+								<li>Supports 2-4 players</li>
+								<li>Wii balance board controllers</li>
+								<li>Smooth gameplay for up to 3 hours</li>
+								</ul>
+
+								<hr />
+
+								<h4>My Contributions</h4>
+								<ul>
+								<li>Planned overall design of the project</li>
+								<li>Helped with server and OpenCV code</li>
+								<li>Designed the entirety of the robot</li>
+								<li>Wrote microcontroller code in C</li>
+								</ul>
+
+								<hr />
+
+								<h4>Pictures</h4>
+								<div class="box alt">
+										<div class="row gtr-50 gtr-uniform">
+											<div class="col-12"><span class="image fit"><img src="bsc/opencv.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="bsc/prototype_orig.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="bsc/robotboard_orig.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="bsc/completed_pcb.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="bsc/gears.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="bsc/gearbox.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="bsc/partial_robot.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="bsc/completed_robot.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="bsc/setup.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="bsc/demo2.jpg" alt="" /></span></div>
+										</div>
+									</div>
+
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

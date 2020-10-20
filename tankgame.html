@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>FPGA Tank Game</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">My Projects</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="bumpercarsumo.html">Bumper Car Sumo</a></li>
+											<li><a href="spacewars.html">Space Wars</a></li>
+										    <li><a href="tankgame.html">FPGA Tank Game</a></li>
+										    <li><a href="tweetmining.html">Political Tweet Analysis</a></li>
+										    <li><a href="eccasic.html">Elliptical Curve ASIC</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>FPGA Tank Game (TANKS)</h2>
+							<p>Team Members: Dan Humeniuk, Melvin Bosnjak, Kyle Price, and Jaden Simon</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<h3>Project Summary</h3>
+								<p>TANKS is a top-down 2-player battle game ran on an Altera/Intel Cyclone V FPGA. Players use SNES controllers to fight to the death as an armored, rolling patriot of the USSR or the USA! </p>
+
+								<p>Our game was built from the ground-up, requiring the creation of a 16-bit CPU, a graphics pipeline, an input controllers, and a plethora of testbenches designed in Verilog. The game logic is written in our own assembly code, which is translated into machine code that can be ran by our CPU. </p>
+
+								<hr />
+
+								<h4>Key Features</h4>
+								<ul>
+								<li>Fully custom 16-bit CPU written in Verilog</li>
+								<li>VGA graphics stack supporting sprites, text and background layers</li>
+								<li>Start menu with multiple appeareance options for players and projectiles</li>
+								<li>Destructable walls</li>
+								<li>Collision and bounds detections</li>
+								<li>Sprite animations</li>
+								<li>SNES Controllers connected directly to the FPGA</li>
+								</ul>
+
+								<hr />
+
+								<h4>My Contributions</h4>
+								<ul>
+								<li>Wrote the Verilog code for CPU/VGA controller</li>
+								<li>Coded graphics and collision functionality in assembly</li>
+								<li>Created some of the sprite graphics</li>
+								</ul>
+
+								<hr />
+
+								<h4>Pictures</h4>
+								<div class="box alt">
+										<div class="row gtr-50 gtr-uniform">
+											<div class="col-6"><span class="image fit"><img src="tankgame/game_picture_1.jpg" alt="" /></span></div>
+											<div class="col-6"><span class="image fit"><img src="tankgame/game_picture_2.jpg" alt="" /></span></div>
+										</div>
+									</div>
+
+								<hr />
+
+								<h4>Design Diagrams</h4>
+								<div class="box alt">
+										<div class="row gtr-50 gtr-uniform">
+											<div class="col-4"><span class="imgbig"><img src="tankgame/cpu_schematic.png" alt="" /></span></div>
+											<div class="col-4"><span class="imgbig"><img src="tankgame/software_flow.png" alt="" /></span></div>
+											<div class="col-4"><span class="imgbig"><img src="tankgame/vga_diagram.png" alt="" /></span></div>
+										</div>
+									</div>
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

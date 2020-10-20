@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Elliptical Curve ASIC</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">My Projects</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="bumpercarsumo.html">Bumper Car Sumo</a></li>
+											<li><a href="spacewars.html">Space Wars</a></li>
+										    <li><a href="tankgame.html">FPGA Tank Game</a></li>
+										    <li><a href="tweetmining.html">Political Tweet Analysis</a></li>
+										    <li><a href="eccasic.html">Elliptical Curve ASIC</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Elliptical Curve Arithmetic Unit</h2>
+							<p>Team Members: Dan Humeniuk, Melvin Bosnjak, and Jaden Simon</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<h3>Project Summary</h3>
+								<p>The Elliptical Curve Arithmetic Unit (ECAU) is an ASIC that performs point-scalar multiplications along a static elliptical curve. Point-scalar multiplications are extremely common in cryptographic applications, using hardware to accelerate these computations could be useful for high-performance services. However, our design uses a measly 7 bits for input values, and as such was mainly done for learning purposes.</p>
+
+								<p>Elliptical curve mathematics require basic finite field operations, which include addition, multiplication, and inversion. These operations were implemented as Verilog modules. Additional modules that could add or double points were designed from these primitive modules. The final unit combined everything to perform a point-scalar operation on the inputs.</p>
+
+								<hr />
+
+								<h4>My Contributions</h4>
+								<ul>
+								<li>Researched finite field arithmetic</li>
+								<li>Designed RTL modules that implemented basic finite field operations</li>
+								<li>Performed some formal verification of the design</li>
+								<li>Helped with placement and routing</li>
+								</ul>
+
+								<hr />
+
+								<h4>Design Diagrams</h4>
+								<div class="box alt">
+										<div class="row gtr-50 gtr-uniform">
+											<div class="col-6"><span class="imgbig2"><img src="asic/image1.png" alt="" /></span></div>
+											<div class="col-6"><span class="imgbig"><img src="asic/point_scalar.png" alt="" /></span></div>
+											<div class="col-12"><span class="imgbig2"><img src="asic/waveform.png" alt="" /><figcaption>Testing waveform verifies the correct operation since (63, 1) * 36 = (0, 0) for this curve</figcaption></span></div>
+										</div>
+									</div>
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
